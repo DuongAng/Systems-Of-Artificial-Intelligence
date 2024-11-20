@@ -1,0 +1,510 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1/"
+     xml:base="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:lab1="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1">
+        <rdfs:comment xml:lang="vi">Đây là lab1 part 2</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#GameOnPlatformWithGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#GameOnPlatformWithGenre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Characteristic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Genre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Platform"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#SameGameGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#SameGameGenre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Characteristic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#hasGerne -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#hasGerne">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Characteristic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#hasPlatform -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#hasPlatform">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Platform"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#hasType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Characteristic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Characteristic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Characteristic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Game"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Genre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Platform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Platform"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Characteristic"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Arena_of_valor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Arena_of_valor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Game"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#action"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#role_playing"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#strategy"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#mobile"/>
+        <lab1:hasType rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#online"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Black_myth_wukong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Black_myth_wukong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Game"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#action"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#adventure"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#role_playing"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#pc"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#plastation"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#xbox"/>
+        <lab1:hasType rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#offline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Elden_ring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Elden_ring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Game"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#action"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#adventure"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#horro"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#pc"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#plastation"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#xbox"/>
+        <lab1:hasType rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#offline"/>
+        <lab1:hasType rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#online"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#It_take_two -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#It_take_two">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Game"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#adventure"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#funny"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#pc"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#plastation"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#xbox"/>
+        <lab1:hasType rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#offline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#League_of_legends -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#League_of_legends">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Game"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#action"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#role_playing"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#strategy"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#pc"/>
+        <lab1:hasType rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#online"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#PUBG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#PUBG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Game"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#action"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#shooter"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#mobile"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#pc"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#xbox"/>
+        <lab1:hasType rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#online"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Sea_of_Thieves -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Sea_of_Thieves">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Game"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#action"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#adventure"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#strategy"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#pc"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#xbox"/>
+        <lab1:hasType rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#online"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Silent_hill -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Silent_hill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Game"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#adventure"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#horro"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#role_playing"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#pc"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#plastation"/>
+        <lab1:hasType rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#offline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Subnautica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Subnautica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Game"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#action"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#adventure"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#horro"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#pc"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#plastation"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#xbox"/>
+        <lab1:hasType rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#offline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#The_scourge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#The_scourge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Game"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#action"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#horro"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#role_playing"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#pc"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#plastation"/>
+        <lab1:hasType rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#offline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#action -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#action">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Characteristic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#adventure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#adventure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Characteristic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#funny -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#funny">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Characteristic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#horro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#horro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Characteristic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#mobile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#mobile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Platform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#offline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#offline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Characteristic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#online -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#online">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Characteristic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#pc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#pc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Platform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#plastation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#plastation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Platform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#role_playing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#role_playing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Characteristic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#shooter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#shooter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Characteristic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#strategy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#strategy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Characteristic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#switch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#switch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Platform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#xbox -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#xbox">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Platform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#The_legend_of_Zelda:_Tears_of_the_kingdom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#The_legend_of_Zelda:_Tears_of_the_kingdom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#Game"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#action"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#adventure"/>
+        <lab1:hasGerne rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#role_playing"/>
+        <lab1:hasPlatform rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#switch"/>
+        <lab1:hasType rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#offline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1/g1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1/genre">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1/g2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Найдите игры того же жанра.</rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#hasGerne"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1/g1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1/genre"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#hasGerne"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1/g2"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1/genre"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1/g1"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1/g2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1#SameGameGenre"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1/g1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tgdd/ontologies/2024/10/lab1/g2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

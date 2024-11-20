@@ -1,0 +1,10 @@
+?- game_in_platform(Game, pc).
+?- genre_game(Game, action).
+
+?- genre_game(Game, action), platform_game(Game, pc).
+?- genre_game(Game, Genre), \+ Genre = shooter.
+?- (type_game(Game, offline); genre_game(Game, horro)).
+
+?- platform_game(Game, xbox), genre_game(Game, action).
+
+?- same_game_genre('The legend of Zelda: Tears of the kingdom', Game).
