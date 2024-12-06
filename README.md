@@ -1,4 +1,2 @@
-Lab1 is how to use prolog
-<br/>
-Lab2 is how to use data prolog in a simple program
-<br/>
+This subject have 2 moduls. </br>
+The first and second lab was in the first modul </br>
