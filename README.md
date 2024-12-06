@@ -1,2 +1,7 @@
-This subject have 2 moduls. </br>
-The first and second lab was in the first modul </br>
+---
+
+- Студент: `Зыонг Динь Ань`
+- Группа: `P3307`
+- ИСУ: `34330`
+
+---
