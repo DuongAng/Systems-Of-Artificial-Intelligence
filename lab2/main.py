@@ -126,7 +126,7 @@ def main_program():
         elif user_input.strip() == "3":
             platform = input(f"What platform do you want?\n>> ").strip().lower()
             find_game_by_platform(platform)
-            print("Pess any key to return to main program")
+            print("Press any key to return to main program")
             msvcrt.getch()
 
         else: 
